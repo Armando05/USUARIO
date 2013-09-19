@@ -1,0 +1,24 @@
+using System;
+namespace proyecto1
+{
+class Persona{
+public string nombre;
+public string correo;
+public int edad;
+public static void Main(string[] args)
+{
+Persona p= new Persona();
+Console.WriteLine("nombre:");
+p.nombre = Console.ReadLine();
+Console.WriteLine("correo:");
+p.correo = Console.ReadLine();
+Console.WriteLine("edad:");
+p.edad= int.Parse(Console.ReadLine());
+Console.Clear();
+Console.WriteLine("nombre:" + p.nombre);
+Console.WriteLine("correo:" + p.correo);
+Console.WriteLine("edad:"+ p.edad);
+Console.ReadLine();
+}
+}
+}
